@@ -1,0 +1,93 @@
+
+.box{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Arial;
+  line-height: 0px;
+}
+.box p{
+ font-family: Arial; 
+ line-height: 4px;
+}
+.upload{
+ background-color: rgb(182, 212, 212);
+ padding: 10px;
+ border-radius: 5px;
+ font-family: Arial;
+ width: 200px;
+ text-align: center;
+ margin-left: 30px;
+}
+.upload label{
+border: 2px dashed;
+width: 100%;
+display: block;
+cursor: pointer;
+font-size: 12px;
+}
+.upload input{
+ visibility: hidden;
+}
+.upload span{
+  display: block;
+  padding-bottom: 10px;
+}
+.img-box{
+ display: grid;
+ grid-template-columns: 6fr 6fr; 
+ margin-top: 10px;
+ gap: 10px;
+}
+.left h3{
+ background-color: black;
+ color: white;
+ font-family: Arial;
+ border-radius: 3px; 
+ font-size: 14px;
+ padding: 7px;
+ text-align: center;
+ min-width: 220px;
+}
+.right h3{
+  background-color:rgb(38, 38, 128);
+  color: white;
+  font-family: Arial;
+  border-radius: 3px; 
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+  min-width: 220px;
+}
+.left, .right{
+ background-color: rgb(206, 208, 208);
+ height: 350px;
+ gap: 5px;
+ box-shadow: 2px 2px 2px gray;
+}
+.img-box img{
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.btn{
+  background-color: rgb(170, 17, 181);
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-family: Arial;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+}
+@media (max-width:600px) {
+  .img-box{
+    display: flex;
+    flex-direction: column;
+  }
+}
